@@ -30,4 +30,4 @@ The module is available in the following languages:
 
 ## Support
 
-If you have any trouble using the module, please [open an issue](github.com/robhuijben/mod_darkmode/issues/new) on GitHub.
+If you have any trouble using the module, please [open an issue](https://github.com/robhuijben/mod_darkmode/issues/new) on GitHub.
