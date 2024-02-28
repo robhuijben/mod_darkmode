@@ -5,7 +5,7 @@
  * @subpackage  mod_darkmode
  *
  * @copyright   (C) 2007 Rob Huijben <https://www.robhuijben.comv>
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @license     GNU General Public License version 2 or later; see LICENSE.md
  */
 
 defined('_JEXEC') or die;
@@ -24,5 +24,5 @@ $app->getDocument()->getWebAssetManager()
     <span class="header-item-icon">
         <span style="margin: 3px; font-size: 1.2rem; transition: all .6s ease;">🌓</span>
     </span>
-    <span class="header-item-text"><?php echo JText::_('MOD_DARKMODE_SWITCHER'); ?></span>
+    <span class="header-item-text"><?php echo Text::_('MOD_DARKMODE_SWITCHER'); ?></span>
 </button>

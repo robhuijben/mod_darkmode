@@ -4,12 +4,11 @@
 	<author>Rob Huijben</author>
 	<creationDate>2024-03</creationDate>
 	<copyright>(C) 2007 Rob Huijben</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<license>GNU General Public License version 2 or later; see LICENSE.md</license>
 	<authorEmail>mail@robhuijben.com</authorEmail>
 	<authorUrl>www.robhuijben.com</authorUrl>
 	<version>0.1.0</version>
 	<description>MOD_DARKMODE_XML_DESCRIPTION</description>
-	<namespace path="src">Joomla\Module\DarkMode</namespace>
 	<files>
 		<filename module="mod_darkmode">mod_darkmode.php</filename>
 		<folder>tmpl</folder>
@@ -37,4 +36,7 @@
 		<language tag="pl-PL">language/pl-PL/mod_darkmode.ini</language>
 		<language tag="pl-PL">language/pl-PL/mod_darkmode.sys.ini</language>
 	</languages>
+	<updateservers>
+    	<server type="extension" name="Dark Mode Switcher Update Site">https://raw.githubusercontent.com/robhuijben/mod_darkmode/main/manifest.xml</server>
+  	</updateservers>
 </extension>

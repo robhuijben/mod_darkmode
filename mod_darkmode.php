@@ -5,7 +5,7 @@
  * @subpackage  mod_darkmode
  *
  * @copyright   (C) 2007 Rob Huijben <https://www.robhuijben.com/>
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @license     GNU General Public License version 2 or later; see LICENSE.md
  */
 
 \defined('_JEXEC') or die;
