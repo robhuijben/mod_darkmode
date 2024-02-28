@@ -31,3 +31,7 @@ The module is available in the following languages:
 ## Support
 
 If you have any trouble using the module, please [open an issue](https://github.com/robhuijben/mod_darkmode/issues/new) on GitHub.
+
+## Credits
+
+This module is based on the Dark Mode article written by Dominik from IT-Networks. The original article can be found [here](https://it-networks.de/dev-blog/tutorial-joomla-5-dark-mode-switcher-modul-erstellen-backend#dark-mode-switcher-erstellen).
