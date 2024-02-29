@@ -10,4 +10,6 @@
 
 \defined('_JEXEC') or die;
 
+$switcherLabel = $params->get('switcher_label', 0);
+
 require \Joomla\CMS\Helper\ModuleHelper::getLayoutPath('mod_darkmode', $params->get('layout', 'default'));

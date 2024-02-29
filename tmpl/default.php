@@ -24,5 +24,7 @@ $app->getDocument()->getWebAssetManager()
     <span class="header-item-icon">
         <span style="margin: 3px; font-size: 1.2rem; transition: all .6s ease;">🌓</span>
     </span>
-    <span class="header-item-text"><?php echo Text::_('MOD_DARKMODE_SWITCHER'); ?></span>
+    <?php if ($switcherLabel == false) : ?>
+        <span class="header-item-text"><?php echo Text::_('MOD_DARKMODE_SWITCHER'); ?></span>
+    <?php endif; ?>
 </button>

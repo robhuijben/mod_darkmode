@@ -14,19 +14,25 @@ This module adds a simple switcher to your Joomla! 5 website to allow users to s
 
 The module will add a switcher to your administration dashboard. Users with backend access can click the switcher to toggle between light and dark mode.
 
+## Features
+
+- Simple switcher to toggle between light and dark mode
+- Available in 9 languages
+- Choose appearance of icon and label or icon only
+
 ## Languages
 
 The module is available in the following languages:
 
-- English
-- German
-- French
-- Spanish
-- Italian
-- Dutch
-- Portuguese
-- Russian
-- Polish
+- 🇬🇧 English
+- 🇩🇪 German
+- 🇫🇷 French
+- 🇪🇸 Spanish
+- 🇮🇹 Italian
+- 🇳🇱 Dutch
+- 🇵🇹 Portuguese
+- 🇷🇺 Russian
+- 🇵🇱 Polish
 
 ## Support
 
