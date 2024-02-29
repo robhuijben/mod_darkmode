@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Update CHANGELOG
-        id: update_changelog
+        id: changelog
         uses: requarks/changelog-action@v1
         with:
           token: ${{ github.token }}
@@ -33,17 +33,11 @@ jobs:
                   ./* \
                   -x .github/ \
 
-      - name: Extract Changelog Section
-        id: extract_changelog
-        run: |
-          CHANGELOG_CONTENT=$(awk '/^## \['"${{ env.LATEST_TAG }}"'\]/,/^## \[/{print}' CHANGELOG.md)
-          echo "::set-output name=content::$CHANGELOG_CONTENT"
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           name: "Dark Mode Switcher v${{ env.LATEST_TAG }}"
-          body: ${{ steps.extract_changelog.outputs.content }}
+          body: ${{ steps.changelog.outputs.changes }}
           files: ./mod_darkmode-${{ env.LATEST_TAG }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
