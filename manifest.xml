@@ -1,6 +1,6 @@
 <updates>
     <update>
-        <name>mod_darkmode</name>
+        <name>Dark Mode Switcher</name>
         <description><![CDATA[The Dark Mode Switcher module enables the backend users to switch between dark and light mode.]]></description>
         <element>mod_darkmode</element>
         <type>module</type>
@@ -8,7 +8,7 @@
         <client>administrator</client>
         <infourl title="Extension Info">https://github.com/robhuijben/mod_darkmode/releases/tag/0.2.0</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/robhuijben/mod_darkmode/releases/download/0.2.0/mod_darkmode-0.2.0zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/robhuijben/mod_darkmode/releases/download/0.2.0/mod_darkmode-0.2.0.zip</downloadurl>
         </downloads>
         <tags>
             <tag>stable</tag>
