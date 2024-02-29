@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.md</license>
 	<authorEmail>mail@robhuijben.com</authorEmail>
 	<authorUrl>www.robhuijben.com</authorUrl>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 	<description>MOD_DARKMODE_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_darkmode">mod_darkmode.php</filename>
@@ -36,6 +36,16 @@
 		<language tag="pl-PL">language/pl-PL/mod_darkmode.ini</language>
 		<language tag="pl-PL">language/pl-PL/mod_darkmode.sys.ini</language>
 	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="switcher_label" type="radio" default="0" label="MOD_DARKMODE_FIELD_DARKMODE_LABEL" description="MOD_DARKMODE_FIELD_DARKMODE_DESC">
+					<option value="0">MOD_DARKMODE_LABEL_ENABLE</option>
+					<option value="1">MOD_DARKMODE_LABEL_DISABLE</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
 	<updateservers>
     	<server type="extension" name="Dark Mode Switcher Update Site">https://raw.githubusercontent.com/robhuijben/mod_darkmode/main/manifest.xml</server>
   	</updateservers>
