@@ -3,6 +3,14 @@
 (() => {
   "use strict";
 
+  let iconDark = "🌙";
+  let iconLight = "☀️";
+
+  if (iconStyle === 1) {
+    iconDark = "<i class='fas fa-moon'></i>";
+    iconLight = "<i class='fas fa-sun'></i>";
+  }
+
   // Run script only once
   if (typeof window.jDarkMode !== "undefined") return;
 
@@ -17,20 +25,20 @@
     const icon = btn.querySelector(".header-item-icon > span");
     const text = btn.querySelector(".header-item-text");
     if (darkMode) {
-      icon.innerHTML = "🌙";
+      icon.innerHTML = iconDark;
       icon.style.backgroundColor = "rgb(31, 48, 71)";
       try {
         text.innerHTML = Joomla.JText._("MOD_DARKMODE_DARK");
       } catch (error) {
-        console.error("Error occurred while setting innerHTML of text:", error);
+        return;
       }
     } else {
-      icon.innerHTML = "☀️";
+      icon.innerHTML = iconLight;
       icon.style.backgroundColor = "transparent";
       try {
         text.innerHTML = Joomla.JText._("MOD_DARKMODE_LIGHT");
       } catch (error) {
-        console.error("Error occurred while setting innerHTML of text:", error);
+        return;
       }
     }
   }

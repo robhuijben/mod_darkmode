@@ -10,6 +10,11 @@
 
 \defined('_JEXEC') or die;
 
+use Joomla\CMS\Language\Text;
+
 $switcherLabel = $params->get('switcher_label', 0);
+$iconStyle = $params->get('icon_style', 0);
+
+Text::script('var iconStyle = ' . json_encode($iconStyle) . ';');
 
 require \Joomla\CMS\Helper\ModuleHelper::getLayoutPath('mod_darkmode', $params->get('layout', 'default'));

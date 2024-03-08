@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.md</license>
 	<authorEmail>mail@robhuijben.com</authorEmail>
 	<authorUrl>www.robhuijben.com</authorUrl>
-	<version>0.2.1</version>
+	<version>0.3.1</version>
 	<description>MOD_DARKMODE_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_darkmode">mod_darkmode.php</filename>
@@ -42,6 +42,10 @@
 				<field name="switcher_label" type="radio" default="0" label="MOD_DARKMODE_FIELD_DARKMODE_LABEL" description="MOD_DARKMODE_FIELD_DARKMODE_DESC">
 					<option value="0">MOD_DARKMODE_LABEL_ENABLE</option>
 					<option value="1">MOD_DARKMODE_LABEL_DISABLE</option>
+				</field>
+				<field name="icon_style" type="radio" default="0" label="MOD_DARKMODE_FIELD_ICON_STYLE_LABEL" description="MOD_DARKMODE_FIELD_ICON_STYLE_DESC">
+					<option value="0">MOD_DARKMODE_LABEL_ICON_STYLE_EMOJI</option>
+					<option value="1">MOD_DARKMODE_LABEL_ICON_STYLE_FONTAWESOME</option>
 				</field>
 			</fieldset>
 		</fields>
