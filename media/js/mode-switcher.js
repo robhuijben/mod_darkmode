@@ -19,11 +19,19 @@
     if (darkMode) {
       icon.innerHTML = "🌙";
       icon.style.backgroundColor = "rgb(31, 48, 71)";
-      text.innerHTML = Joomla.JText._("MOD_DARKMODE_DARK");
+      try {
+        text.innerHTML = Joomla.JText._("MOD_DARKMODE_DARK");
+      } catch (error) {
+        console.error("Error occurred while setting innerHTML of text:", error);
+      }
     } else {
       icon.innerHTML = "☀️";
       icon.style.backgroundColor = "transparent";
-      text.innerHTML = Joomla.JText._("MOD_DARKMODE_LIGHT");
+      try {
+        text.innerHTML = Joomla.JText._("MOD_DARKMODE_LIGHT");
+      } catch (error) {
+        console.error("Error occurred while setting innerHTML of text:", error);
+      }
     }
   }
 
