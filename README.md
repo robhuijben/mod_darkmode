@@ -19,6 +19,7 @@ The module will add a switcher to your administration dashboard. Users with back
 - Simple switcher to toggle between light and dark mode
 - Available in 9 languages
 - Choose appearance of icon and label or icon only
+- Choose icon style, Emoji or Font Awesome
 
 ## Languages
 
